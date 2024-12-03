@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Html and CSS Tooltip</title>
+        <style type="text/css">
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            .tooltip-text {
+                visibility: hidden;
+                position: absolute;
+                z-index: 1;
+                width: 100px;
+                color: white;
+                font-size: 12px;
+                background-color: #192733;
+                border-radius: 10px;
+                padding: 10px 15px 10px 15px;
+            }
+
+            .tooltip-hover-text:hover .tooltip-text {
+                visibility: visible;
+            }
+
+            #tooltip-top {
+                top: -40px;
+                left: -50%;
+            }
+
+            #tooltip-bottom {
+                top: 25px;
+                left: -50%;
+            }
+
+            #tooltip-left {
+                top: -8px;
+                right: 120%;
+            }
+
+            #tooltip-right {
+                top: -8px;
+                left: 120%;
+            }
+
+            .tooltip-hover-text {
+                position: relative;
+                display: inline-block;
+                margin: 80px;
+                font-family: Arial;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="tooltip-hover-text">
+            Hover me
+            <span class="tooltip-text" id="tooltip-top">I'm a tooltip!</span>
+        </div>
+        <div class="tooltip-hover-text">
+            Hover me
+            <span class="tooltip-text" id="tooltip-bottom">I'm a tooltip!</span>
+        </div>
+        <div class="tooltip-hover-text">
+            Hover me
+            <span class="tooltip-text" id="tooltip-left">I'm a tooltip!</span>
+        </div>
+        <div class="tooltip-hover-text">
+            Hover me
+            <span class="tooltip-text" id="tooltip-right">I'm a tooltip!</span>
+        </div>
+    </body>
+</html>
