@@ -1,5 +1,7 @@
-# CSS Simple Tooltip
-Html and CSS Simple Tooltip
-# Built With
+### CSS Simple Tooltip
+![Product Screen Shot][product-screenshot] <br/>
+### Built With
 * Html 
 * CSS
+<!-- Demo Screenshot -->
+[product-screenshot]: Demo.gif
